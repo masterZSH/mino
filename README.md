@@ -1,4 +1,4 @@
-# Instruction
+## Instruction
 
 Data encryption and Data decryption.
 
@@ -13,14 +13,13 @@ go get -u github.com/masterZSH/mino
 ## Usage
 
 ```go
+// create a new key by pass and salt
+k, err := mino.NewKey("myPass", "mySalt")
 
-    // create a new key by pass and salt
-	k, err := mino.NewKey("myPass", "mySalt")
+// Encrypt plaintext
+cipherText, err := k.Encrypt(plainText)
 
-    // Encrypt plaintext
-    cipherText, err := k.Encrypt(plainText)
-
-    // Decrypt ciphertext
-    plainText, err := k.Decrypt(cipherText)
+// Decrypt ciphertext
+plainText, err := k.Decrypt(cipherText)
 
 ```
