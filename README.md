@@ -26,3 +26,7 @@ cipherText, err := k.Encrypt(plainText)
 plainText, err := k.Decrypt(cipherText)
 
 ```
+
+## Examples
+
+<a href="./examples/chat/README.md">1v1 command-line chat</a>
