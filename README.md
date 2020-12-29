@@ -30,3 +30,7 @@ plainText, err := k.Decrypt(cipherText)
 ## Examples
 
 <a href="./examples/chat/README.md">1v1 command-line chat</a>
+
+
+## Doc
+[doc](https://godoc.org/github.com/masterZSH/mino)

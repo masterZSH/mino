@@ -1,4 +1,4 @@
-## chat example
+## Chat Example
 
 
 ```go
