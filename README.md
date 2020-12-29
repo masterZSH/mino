@@ -34,3 +34,8 @@ plainText, err := k.Decrypt(cipherText)
 
 ## Doc
 [doc](https://godoc.org/github.com/masterZSH/mino)
+
+
+## Ctl
+
+[minoctl](https://github.com/masterZSH/mino/tree/main/cli) 
