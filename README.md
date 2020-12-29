@@ -3,9 +3,7 @@
 
 ## Instruction
 
-Data encryption and Data decryption.
-
-It can already be safely transferred across all systems.
+Fast&Secure encryption tool
 
 ## Install
 
