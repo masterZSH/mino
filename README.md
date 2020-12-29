@@ -33,4 +33,4 @@ plainText, err := k.Decrypt(cipherText)
 
 
 ## Doc
-[doc](!https://godoc.org/github.com/masterZSH/mino)
+[doc](https://godoc.org/github.com/masterZSH/mino)
