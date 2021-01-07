@@ -19,6 +19,9 @@ var (
 
 	// ErrKey invalid key
 	ErrKey = errors.New("invalid key")
+
+	// ErrCiphertext invalid ciphertext
+	ErrCiphertext = errors.New("invalid ciphertext")
 )
 
 const (
@@ -40,7 +43,7 @@ func NewKey(passphrase []byte, salt []byte) (key Key, err error) {
 		err = ErrMissKey
 		return
 	}
-	if len(passphrase) < 1 {
+	if len(salt) < 1 {
 		err = ErrMissSalt
 		return
 	}
@@ -78,7 +81,7 @@ func (key Key) Encrypt(plaintext []byte) (ciphertext []byte, err error) {
 // Decrypt decrypt ciphertext
 func (key Key) Decrypt(ciphertext []byte) (plaintext []byte, err error) {
 	if len(ciphertext) < 13 {
-		err = ErrKey
+		err = ErrCiphertext
 		return
 	}
 	b, err := aes.NewCipher(key.Content)
